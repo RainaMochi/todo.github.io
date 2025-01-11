@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的网站！</title>
+    <style>
+        .body1 {
+            background: linear-gradient(
+                to right,
+                rgba(113, 65, 168, 1),
+                rgba(44, 114, 251, 0.8)
+            );
+        }
+        .todo_app{
+            width: 98%;
+            height: 500px;
+            background-color: rgb(253, 253, 253);
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-top: 30px;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+        .title1 {
+            font-size: 36px;
+            text-align: center;
+            font-family:'Arial', sans-serif;
+            font-weight: bold;
+            
+        }
+        .todo-from {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            padding: 20px  ;
+        }
+        .input1 {
+            width: 60%; /* 输入框宽度 */
+            padding: 10px; /* 内边距 */
+            font-size: 16px; /* 字体大小 */
+            border: 2px solid #9a9999; /* 边框 */
+            border-radius: 20px 0 0 20px; /* 圆角 */
+            outline: none; /* 去掉默认聚焦边框 */
+            height: 20px ;
+        }
+        .todo-button {
+            width: 20%; /* 输入框宽度 */
+            height: 44px;
+            border: 2px;
+            font-size: 16px; /* 字体大小 */
+            border-radius: 0 20px 20px  0; /* 圆角 */
+            color: aliceblue;
+            line-height: 41px ;
+            text-align: center;
+            background: linear-gradient(
+                to right,
+                rgba(113, 65, 168, 1),
+                rgba(44, 114, 251, 0.8)
+            );
+            user-select: none;
+            cursor: pointer;
+        }
+        .item {
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 30px;
+            border-radius: 20px;
+            padding: 20px  ;
+            margin: 20px auto;
+            box-shadow: #9a9999 8px 8px 15px;
+        }
+        .del {
+            color: rgb(230, 122, 122);
+            user-select: none;
+            cursor: pointer;
+        }
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class ="body1">
+   <div class="todo_app">
+        <div class="title1">
+           Raina Todo App
+        </div>
+
+        <div class="todo-from">
+            <input type="text" class="input1" placeholder="Abb to  todo">
+            <div class="todo-button">
+                Abb to todo
+            </div>
+        </div>
+
+        <div class="item completed ">
+            <div>
+                <input type="checkbox" class="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div>
+                <span class="day">1.8</span>
+                <span class="del">del</span>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div>
+                <input type="checkbox" class="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            
+            <div>
+                <span class="day">1.9</span>
+                <span class="del">del</span>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <input type="checkbox" class="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            
+            <div>
+                <span class="day">1.10</span>
+                <span class="del">del</span>
+            </div>
+        </div>
+
+   </div>
+</body>
+</html>
